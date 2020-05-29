@@ -31,6 +31,7 @@
             <td>{{ produit.Description}}</td>
             <td>
                 <a href="{{ path('produit.detail', {'produit': produit.Id}) }}" class="btn btn-secondary">Voir la fiche produit</a>
+                <a href="{{ path('articles_edit', {'id': produit.Id}) }}">Editer</a>
             </td>
             </tr>
         {% endfor%}
